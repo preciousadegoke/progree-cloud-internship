@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Secure static website deployed on AWS S3 and distributed globally through Amazon CloudFront."
+    >
+
+    <title>Progree Cloud Computing | Task 2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="hero">
+
+            <p class="tag">PROGREE CLOUD COMPUTING INTERNSHIP</p>
+
+            <h1>Secure Static Web Hosting</h1>
+
+            <p class="subtitle">
+                A secure static website hosted on Amazon S3 and
+                distributed globally through Amazon CloudFront.
+            </p>
+
+            <div class="status">
+                <span>✓ Private S3 Origin</span>
+                <span>✓ CloudFront CDN</span>
+                <span>✓ HTTPS</span>
+                <span>✓ Origin Access Control</span>
+            </div>
+
+        </section>
+
+
+        <section class="architecture">
+
+            <h2>Cloud Architecture</h2>
+
+            <div class="flow">
+
+                <div class="box">
+                    <strong>User</strong>
+                    <small>Browser</small>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="box">
+                    <strong>CloudFront</strong>
+                    <small>CDN + HTTPS</small>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="box">
+                    <strong>Amazon S3</strong>
+                    <small>Private Origin</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="info">
+
+            <div>
+                <h3>Security</h3>
+                <p>
+                    Direct public access to the S3 bucket is blocked.
+                    CloudFront accesses the origin through Origin
+                    Access Control.
+                </p>
+            </div>
+
+            <div>
+                <h3>Performance</h3>
+                <p>
+                    CloudFront caches static assets at edge locations
+                    to reduce latency for users.
+                </p>
+            </div>
+
+            <div>
+                <h3>Encryption</h3>
+                <p>
+                    Client connections are protected using HTTPS/TLS.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Progree Cloud Computing Internship • Task 2
+        </p>
+    </footer>
+
+</body>
+</html>
